@@ -3,25 +3,43 @@ import { TopBar } from './components/TopBar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
-import { Skills } from './components/Skills';
+import { TechStack } from './components/TechStack';
+import { Certifications } from './components/Certifications';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { BottomNav } from './components/BottomNav';
 import { BackgroundEffects } from './components/BackgroundEffects';
 import { ParticleMesh } from './components/ParticleMesh';
 import { GlowCursor } from './components/GlowCursor';
+import { SpiderCursor } from './components/SpiderCursor';
 import { Toast } from './components/Toast';
 import { ScrollToTop } from './components/ScrollToTop';
 
 export const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('section-1');
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [spiderMode, setSpiderMode] = useState<'white' | 'cyan' | 'off'>('white');
 
   const showToast = (message: string) => {
     setToastMessage(message);
     setTimeout(() => {
       setToastMessage(null);
     }, 3400);
+  };
+
+  const handleToggleSpider = () => {
+    setSpiderMode((prev) => {
+      if (prev === 'white') {
+        showToast('🕷️ Spider Effect: Neon Cyan glow mode');
+        return 'cyan';
+      }
+      if (prev === 'cyan') {
+        showToast('🕷️ Spider Effect: Paused');
+        return 'off';
+      }
+      showToast('🕷️ Spider Effect: Classic White mode');
+      return 'white';
+    });
   };
 
   useEffect(() => {
@@ -77,7 +95,12 @@ export const App: React.FC = () => {
 
   return (
     <div className="portfolio-app">
-      {/* Interactive Custom Glowing Cursor Trail */}
+      {/* Spider Cursor Animation Layer (from spider-cursor demo) */}
+      {spiderMode !== 'off' && (
+        <SpiderCursor color={spiderMode === 'cyan' ? '#00e5ff' : '#ffffff'} />
+      )}
+
+      {/* Interactive Glowing Cursor Trail */}
       <GlowCursor />
 
       {/* Cybernetic Particle Network Layer */}
@@ -86,15 +109,16 @@ export const App: React.FC = () => {
       {/* Dynamic Background and Fluid WebGL Layer */}
       <BackgroundEffects />
 
-      {/* Top Header Bar */}
-      <TopBar />
+      {/* Top Header Bar with Spider Toggle */}
+      <TopBar spiderMode={spiderMode} onToggleSpider={handleToggleSpider} />
 
       {/* Main Sections */}
       <main>
         <Hero />
         <About />
         <Experience />
-        <Skills />
+        <TechStack />
+        <Certifications />
         <Contact onShowToast={showToast} />
       </main>
 

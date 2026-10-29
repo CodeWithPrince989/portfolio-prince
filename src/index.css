@@ -1862,4 +1862,311 @@ body {
   }
 }
 
+/* ===== TECH STACK SECTION ===== */
+.tech-stack-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.tech-stack-card {
+  background: rgba(22, 22, 30, 0.55);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1),
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.tech-stack-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(245, 166, 35, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(245, 166, 35, 0.15);
+}
+
+.tech-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tech-card-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.tech-stack-card:hover .tech-card-icon-wrap {
+  transform: scale(1.08);
+}
+
+.tech-card-badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.tech-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+
+.tech-card-cat {
+  font-size: 11px;
+  color: var(--yellow);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tech-card-focus {
+  font-size: 12.5px;
+  color: var(--light-gray);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.competency-chip {
+  padding: 8px 18px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.competency-chip:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0, 229, 255, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 229, 255, 0.2);
+}
+
+.chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--yellow);
+  flex-shrink: 0;
+}
+
+/* ===== CERTIFICATIONS & CREDENTIALS SECTION ===== */
+.credentials-section {
+  padding-top: 100px;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.credential-card {
+  background: rgba(20, 20, 28, 0.65);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.credential-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 229, 255, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(0, 229, 255, 0.12);
+}
+
+.credential-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.issuer-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.credential-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.badge-yellow {
+  background: rgba(245, 166, 35, 0.15);
+  color: var(--yellow);
+  border: 1px solid rgba(245, 166, 35, 0.4);
+}
+
+.badge-cyan {
+  background: rgba(0, 229, 255, 0.12);
+  color: var(--cyan);
+  border: 1px solid rgba(0, 229, 255, 0.35);
+}
+
+.badge-green {
+  background: rgba(0, 230, 118, 0.12);
+  color: #00e676;
+  border: 1px solid rgba(0, 230, 118, 0.35);
+}
+
+.badge-purple {
+  background: rgba(187, 134, 252, 0.15);
+  color: #bb86fc;
+  border: 1px solid rgba(187, 134, 252, 0.35);
+}
+
+.credential-period {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+.credential-verified-mark {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0, 230, 118, 0.15);
+  border: 1px solid #00e676;
+  color: #00e676;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.credential-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.credential-issuer {
+  font-size: 13px;
+  color: var(--yellow);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.credential-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--light-gray);
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.credential-skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.credential-skill-tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 768px) {
+  .tech-stack-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== SPIDER CURSOR TOGGLE & CANVAS ===== */
+.spider-toggle-chip {
+  background: rgba(30, 30, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.spider-toggle-chip:hover {
+  border-color: var(--yellow);
+  transform: scale(1.04);
+  box-shadow: 0 4px 18px rgba(245, 166, 35, 0.25);
+}
+
+@media (max-width: 768px) {
+  .spider-toggle-chip {
+    padding: 6px 12px;
+    font-size: 11px;
+    gap: 4px;
+  }
+}
+
+#spider-canvas {
+  pointer-events: none !important;
+}
+
+
+
 

@@ -19,7 +19,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeSection, onNavigate 
     },
     {
       id: 'section-2',
-      label: 'About Me',
+      label: 'About',
       icon: (
         <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -43,10 +43,19 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeSection, onNavigate 
     },
     {
       id: 'section-4',
-      label: 'Skills',
+      label: 'Stack',
       icon: (
         <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        </svg>
+      )
+    },
+    {
+      id: 'section-credentials',
+      label: 'Credentials',
+      icon: (
+        <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       )
     },
