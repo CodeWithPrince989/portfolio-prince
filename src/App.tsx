@@ -8,6 +8,8 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { BottomNav } from './components/BottomNav';
 import { BackgroundEffects } from './components/BackgroundEffects';
+import { ParticleMesh } from './components/ParticleMesh';
+import { GlowCursor } from './components/GlowCursor';
 import { Toast } from './components/Toast';
 import { ScrollToTop } from './components/ScrollToTop';
 
@@ -19,7 +21,7 @@ export const App: React.FC = () => {
     setToastMessage(message);
     setTimeout(() => {
       setToastMessage(null);
-    }, 3200);
+    }, 3400);
   };
 
   useEffect(() => {
@@ -75,6 +77,12 @@ export const App: React.FC = () => {
 
   return (
     <div className="portfolio-app">
+      {/* Interactive Custom Glowing Cursor Trail */}
+      <GlowCursor />
+
+      {/* Cybernetic Particle Network Layer */}
+      <ParticleMesh />
+
       {/* Dynamic Background and Fluid WebGL Layer */}
       <BackgroundEffects />
 

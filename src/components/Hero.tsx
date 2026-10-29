@@ -1,21 +1,107 @@
 import React from 'react';
 
 export const Hero: React.FC = () => {
+  const scrollToProjects = () => {
+    const el = document.getElementById('section-3');
+    if (el) {
+      window.scrollTo({
+        top: el.getBoundingClientRect().top + window.scrollY - 30,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const scrollToContact = () => {
+    const el = document.getElementById('section-5');
+    if (el) {
+      window.scrollTo({
+        top: el.getBoundingClientRect().top + window.scrollY,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <section id="section-1" className="section">
+    <section id="section-1" className="section hero-section-enhanced">
+      {/* Engineering Focus Badges */}
       <div className="hero-tags hero-animate hero-animate-delay-1">
-        <span className="hero-tag green">- AI&amp;ML ENGINEER</span>
-        <span className="hero-tag">- Web dev</span>
-        <span className="hero-tag yellow">- Data Analyst</span>
+        <span className="hero-tag green">
+          <span className="tag-indicator" /> AI &amp; ML ENGINEER
+        </span>
+        <span className="hero-tag cyan">
+          <span className="tag-indicator" /> FULL-STACK WEB ARCHITECT
+        </span>
+        <span className="hero-tag yellow">
+          <span className="tag-indicator" /> B.TECH CSE (AI/ML &amp; GENAI)
+        </span>
       </div>
 
+      {/* Main Hero Header with Neon Cyber Accent */}
       <h1 className="hero-name hero-animate hero-animate-delay-2">
-        Prince
+        <span className="hero-name-gradient">Prince</span>
         <br />
-        Singh
+        <span className="hero-name-glow">Singh</span>
       </h1>
 
-      <div className="hero-links hero-animate hero-animate-delay-3">
+      {/* Bio Tagline */}
+      <p
+        className="hero-bio-lead hero-animate hero-animate-delay-2"
+        style={{
+          maxWidth: '680px',
+          fontSize: '18px',
+          lineHeight: '1.6',
+          color: 'var(--light-gray)',
+          marginBottom: '28px',
+          backdropFilter: 'blur(8px)'
+        }}
+      >
+        B.Tech Computer Science Engineer passionate about building complete, high-impact systems — from computer vision biometrics &amp; embedded IoT to WebGL shaders and game physics engines.
+      </p>
+
+      {/* Key Stats Counter Strip */}
+      <div className="hero-stats-strip hero-animate hero-animate-delay-3">
+        <div className="stat-card">
+          <span className="stat-number">5+</span>
+          <span className="stat-caption">Production Builds</span>
+        </div>
+        <div className="stat-card">
+          <span className="stat-number">90 FPS</span>
+          <span className="stat-caption">Engine Architecture</span>
+        </div>
+        <div className="stat-card">
+          <span className="stat-number">Runner-Up</span>
+          <span className="stat-caption">WRO Autonomous Robotics</span>
+        </div>
+        <div className="stat-card">
+          <span className="stat-number">36-Hr</span>
+          <span className="stat-caption">Hackathon IoT Finisher</span>
+        </div>
+      </div>
+
+      {/* Quick Action CTAs */}
+      <div
+        className="hero-actions-row hero-animate hero-animate-delay-3"
+        style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '32px' }}
+      >
+        <button
+          onClick={scrollToProjects}
+          className="contact-btn hero-cta-primary"
+          type="button"
+        >
+          Explore Projects ⚡
+        </button>
+
+        <button
+          onClick={scrollToContact}
+          className="hero-cta-secondary"
+          type="button"
+        >
+          Let&apos;s Build Together ↗
+        </button>
+      </div>
+
+      {/* Hero Links Grid */}
+      <div className="hero-links hero-animate hero-animate-delay-4">
         <a
           href="mailto:princekumarsingh016592@gmail.com"
           className="hero-link"
@@ -73,7 +159,7 @@ export const Hero: React.FC = () => {
               <rect x="14" y="14" width="7" height="7" rx="1" />
             </svg>
           </span>
-          global work
+          Open to Global Opportunities
         </span>
       </div>
     </section>
