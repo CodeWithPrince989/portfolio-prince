@@ -1,0 +1,8 @@
+{
+  "name": "Prince Singh - Portfolio",
+  "description": "Portfolio of Prince Singh — AI Engineer, Web Developer, and Data Analyst building impactful solutions.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

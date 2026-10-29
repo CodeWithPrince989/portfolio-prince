@@ -1,81 +1,56 @@
-# ⚡ Manav Sukhwani — Portfolio
+# Prince Singh — Portfolio
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-AI%20%7C%20Robotics%20%7C%20Aerospace-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Age-18-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Built%20With-HTML%20%7C%20CSS%20%7C%20JS-black?style=for-the-badge" />
-</p>
+Modern, high-performance personal portfolio of Prince Singh — AI Engineer, Web Developer, and B.Tech CSE (AI/ML & Generative AI) student.
+
+Built with **React**, **TypeScript**, **Vite**, and **WebGL** fluid shader effects.
 
 ---
 
-## 🚀 Live Website
+## ⚡ Features
 
-🔗 **https://prince.win**
-
----
-
-## 🧠 About Me
-
-I’m Prince — an 21-year-old developer focused on building at the intersection of **AI, robotics, and aerospace**.
-
-I don’t just learn tech — I build with intent.
-
-* ⚡ Consistent daily improvement
-* 💻 Real-world personal projects
-* 🏋️ Discipline through gym & routine
-* 🎯 Long-term goal: Build futuristic systems (Tony Stark path)
+- **Dynamic Visuals & WebGL Shaders**: Real-time Navier-Stokes fluid cursor simulation and scroll-synchronized video & blur effects.
+- **Projects & Engineering Showcase**: Detailed case studies covering SnapClass AI (Attendance System), Smart Pet Health Tracker (ESP32 IoT), Veil Runner (GGJ 2026), Autonomous Smart City Robot (WRO Runner Up), and Interactive WebGL systems.
+- **Filterable Category Views**: Easily filter projects by AI & ML, IoT & Robotics, Web & Graphics, and Game Dev.
+- **Skills & Tech Stack**: Interactive grid of technologies, tools, programming languages, and certifications.
+- **Direct Contact Channel**: Integrated contact form, quick email copy button, and direct links to LinkedIn, GitHub, and Instagram.
+- **Adaptive Performance & Responsive Design**: Seamless layout across mobile, tablet, and desktop screens with reduced motion preference support.
 
 ---
 
 ## 🛠️ Tech Stack
 
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js" />
-</p>
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Modern CSS3 (Glassmorphism, custom CSS properties, hardware-accelerated animations)
+- **Graphics**: WebGL / Canvas API (interactive fluid dynamics)
+- **Deployment**: Vite build with static asset optimization
 
 ---
 
-## 📂 Features
+## 🚀 Getting Started
 
-* 🎨 Clean & modern UI
-* 📱 Fully responsive design
-* ⚡ Fast loading performance
-* 🔍 SEO ready (robots.txt + sitemap.xml)
-* 🧩 Modular structure
+### Prerequisites
 
----
+- Node.js 18+ or Node.js 22
+- npm
 
-## ⚙️ Run Locally
+### Installation & Development
 
+```bash
+# Install dependencies
+npm install
 
-## 🚀 Deployment
+# Run the development server
+npm run dev
 
-* Hosted on Vercel
-* Connected to custom domain: **prince.win**
-* Auto-deploy enabled via GitHub
-
----
-
-## 📈 Future Upgrades
-
-* 🤖 AI-powered features
-* 🌐 Backend integration
-* 🎬 Advanced animations
-* 📊 Project case studies
+# Build for production
+npm run build
+```
 
 ---
-
 
 ## 🤝 Connect
 
-If you're building something ambitious or want to collaborate — reach out.
-
----
-
-## ⚡ Philosophy
-
-> Build. Improve. Repeat.
-> Consistency > Motivation
-
----
+- **Email**: [princekumarsingh016592@gmail.com](mailto:princekumarsingh016592@gmail.com)
+- **LinkedIn**: [Prince Singh](https://www.linkedin.com/in/prince-singh-188676280/)
+- **GitHub**: [CodeWithPrince989](https://github.com/CodeWithPrince989)
+- **Instagram**: [@prince.ipynb](https://www.instagram.com/prince.ipynb)
